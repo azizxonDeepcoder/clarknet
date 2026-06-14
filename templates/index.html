@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>ClarkNet</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+</head>
+<body>
+
+<div class="box">
+
+    <h1>CLARKNET</h1>
+    <p>Bu sayt 18+ uchun</p>
+
+    <form action="/enter" method="post">
+
+        <label>18+ tasdiqlang:</label>
+        <select name="age">
+            <option value="0">Yo‘q</option>
+            <option value="18+">Ha</option>
+        </select>
+
+        <br><br>
+
+        <label>Viloyat tanlang:</label>
+        <select name="region">
+            <option>Toshkent</option>
+            <option>Samarqand</option>
+            <option>Buxoro</option>
+            <option>Andijon</option>
+            <option>Farg‘ona</option>
+            <option>Qoqon</option>
+        </select>
+
+        <br><br>
+
+        <button type="submit">Kirish</button>
+
+    </form>
+
+</div>
+
+</body>
+</html>

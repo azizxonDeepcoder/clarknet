@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>DarkNet - Horror</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+</head>
+<body>
+
+<audio autoplay loop>
+    <source src="{{ url_for('static', filename='sound.mp3') }}" type="audio/mp3">
+</audio>
+
+<div class="box">
+
+    <h1>DARKNET HORROR</h1>
+
+    <p>Viloyat: {{ region }}</p>
+
+    <h3>Qorqinchli voqea:</h3>
+    <p>{{ event }}</p>
+
+    <form action="/" method="get">
+        <button>Refresh</button>
+    </form>
+
+</div>
+
+<script>
+    // 10% jumpscare
+    if (Math.random() < 0.1) {
+        alert(" JUMPSCARE!!!");
+    }
+</script>
+
+</body>
+</html>
